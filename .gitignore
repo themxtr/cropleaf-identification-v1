@@ -1,0 +1,69 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual environment ---
+venv/
+.env/
+env/
+
+tf-env/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Temporary files ---
+*.tmp
+*.log
+
+# --- Images (ignore everywhere EXCEPT models) ---
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.tiff
+
+!models/**
+
+
+# --- Project datasets ---
+crops/
+crop_augmented/
+dataset/
+data/
+images/
+results/
+output/
+
+# --- TensorFlow / Keras Models ---
+
+
+# --- Build files ---
+build/
+dist/
+
+# --- Backup files ---
+*.bak
+*.old
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- VSCode ---
+.vscode/
+
+tf-env/
+crops/
+data/
+dataset/
+# --- Allow models for Git LFS ---
+!models/
+!models/**
+!*.keras
+!*.h5
+!*.pb
+!*.tflite
