@@ -54,7 +54,7 @@ dist/
 Thumbs.db
 
 # --- VSCode ---
-.vscode/
+#.vscode/
 
 tf-env/
 crops/
