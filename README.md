@@ -1,102 +1,85 @@
-# Crop Leaf Identification 🌱
+Crop Leaf Identification 🌱
 
-This repository contains a machine learning–based system for **crop leaf disease identification** using trained deep learning models.  
-The project focuses on **inference-ready deployment**, with trained models versioned using **Git LFS**.
+This repository presents a machine learning–based system for crop leaf disease identification using deep learning models.
+The project is designed for inference-ready deployment, with trained models versioned and managed using Git LFS.
 
----
+Features
 
-## 📌 Features
-- Crop leaf disease classification
-- Pre-trained deep learning models (Keras / TensorFlow)
-- Lightweight inference using `.tflite` models
-- Clean ML repository structure (no datasets committed)
+Automated crop leaf disease classification
+Pre-trained deep learning models using TensorFlow and Keras
+Lightweight inference using TensorFlow Lite models
+Clean and scalable machine learning repository structure
+No datasets or virtual environments committed
+Project Structure
 
----
+crop-detectionv1.6
 
-## 📁 Project Structure
-crop-detectionv1.6/
-│
-├── models/ # Trained models (Git LFS)
-│ ├── best_classifier.keras
-│ ├── classifier.keras
-│ ├── crop.tflite
-│ └── embedding_model/
-│
-├── train.py # Model training script
-├── dataset.py # Dataset handling logic
-├── convert_tflite.py # Model conversion to TFLite
-├── test.py # Model testing
-├── test_visualise.py # Visualisation utilities
-├── .gitignore
-├── .gitattributes
-└── README.md
+models
 
-yaml
-Copy code
+best_classifier.keras
 
----
+classifier.keras
 
-## 🧠 Model Details
-- Framework: **TensorFlow / Keras**
-- Formats used:
-  - `.keras` – full training models
-  - `.tflite` – lightweight inference models
-- Models are tracked using **Git LFS**
+crop.tflite
 
----
+embedding_model
 
-## 🚀 Getting Started
+train.py – Model training script
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/themxtr/cropleaf-identification-v1.git
-cd cropleaf-identification-v1
-2️⃣ Install dependencies
-bash
-Copy code
-pip install -r requirements.txt
-3️⃣ Run inference / testing
-bash
-Copy code
-python test.py
-⚠️ Important Notes
-❌ Datasets are not included in this repository
+dataset.py – Dataset handling utilities
 
-❌ Virtual environments are ignored
+convert_tflite.py – Conversion to TensorFlow Lite
 
-✅ Only final trained models are versioned
+test.py – Model testing script
 
-✅ Suitable for academic and deployment use
+test_visualise.py – Prediction visualisation
 
-📊 Dataset
-Due to size constraints, datasets are excluded from Git.
-You may place your dataset locally in:
+.gitignore
 
-kotlin
-Copy code
-data/
-dataset/
-crops/
-🏷️ Versioning
-Model versions are tracked using Git tags:
+.gitattributes
 
-bash
-Copy code
-git tag v1.0
-git push origin v1.0
-👨‍💻 Author
+README.md
+
+Model Details
+
+Framework: TensorFlow and Keras
+
+Model formats used:
+
+.keras for full training models
+
+.tflite for lightweight inference models
+
+Models are versioned using Git LFS
+
+Getting Started
+
+Clone the repository from GitHub.
+
+Install the required Python dependencies listed in requirements.txt.
+
+Run the test script to perform inference or evaluation.
+
+Important Notes
+
+Datasets are not included in this repository
+
+Virtual environments are ignored
+
+Only final trained models are versioned
+
+Suitable for academic, research, and deployment use
+
+Dataset
+Due to size constraints, datasets are excluded from version control.
+Place datasets locally in any of the following directories:
+data, dataset, or crops
+
+Versioning
+Model versions are managed using Git tags to track releases and updates.
+
+Author
 Madhavan Rangaraj
 
-📜 License
-This project is intended for academic and research purposes.
-
-yaml
-Copy code
-
----
-
-If you want, I can **expand** this by:
-- Making it **IEEE / academic style**
-- Adding **model performance metrics**
-- Writing a **deployment-ready README**
-- Creating a **dataset instructions section**
+License
+This project is intended for academic and research purposes only.
